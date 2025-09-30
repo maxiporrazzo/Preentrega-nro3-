@@ -8,34 +8,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar"> 
-                <li class="logo"><img src="/src/eFs6wb01.svg" alt=""></li>
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/pages/carta.html">CARTA</a></li>
-                <li><a href="/pages/data.html">SOBRE NOSOTROS</a></li>
-                <li><a href="/pages/galeria.html">GALERIA</a></li>
-                <li><a href="/pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="section-galeria">
-        <h1 class="titulo-galeria">Galeria</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maxime error modi atque nemo commodi esse veniam fuga non! Neque magni molestiae repellat nulla modi. Quod quibusdam quo voluptas esse.</p>
-        </section>
-            <section class="main-galeria">
-                <div class="parent-galeria">
-                    <div class="div1"><img src="/src/asadocompleto.jpg" alt=""></div>
-                    <div class="div2"><img src="/src/pizza especial.jpg" alt=""></div>
-                    <div class="div3"><img src="/src/pizzasalchichas.jpeg" alt=""></div>
-                    <div class="div4"><img src="/src/ensalada.jpg" alt=""></div>
-                    <div class="div5"><img src="/src/torta.index.jpg" alt=""></div>
-                    <div class="div6"><img src="/src/plato.de.pasta.jpg" alt=""></div>
-                </div>
-            </section>
-            </main>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <li class="logo"><img src="/src/eFs6wb01.svg" alt=""></li>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/carta.html">CARTA</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/data.html">SOBRE NOSOTROS</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="section-galeria">
+        <h1 class="titulo-galeria">Galería</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate maxime error 
+            modi atque nemo commodi esse veniam fuga non! Neque magni molestiae repellat nulla modi. 
+            Quod quibusdam quo voluptas esse.
+        </p>
+    </section>
+
+    <section class="main-galeria">
+        <div class="parent-galeria">
+            <div class="div1">
+                <img src="/src/asadocompleto.jpg" alt="Asado completo">
+            </div>
+            <div class="div2">
+                <img src="/src/pizza especial.jpg" alt="Pizza especial">
+            </div>
+            <div class="div3">
+                <img src="/src/pizzasalchichas.jpeg" alt="Pizza con salchichas">
+            </div>
+            <div class="div4">
+                <img src="/src/ensalada.jpg" alt="Ensalada fresca">
+            </div>
+            <div class="div5">
+                <img src="/src/torta.index.jpg" alt="Torta de postre">
+            </div>
+            <div class="div6">
+                <img src="/src/plato.de.pasta.jpg" alt="Plato de pasta">
+            </div>
+        </div>
+    </section>
+</main>
+
         <footer>
             <p>© 2024 Restaurante Ejemplo. Todos los derechos reservados.</p>
             <p>Redes Sociales</p>
@@ -51,6 +96,9 @@
                 </li>
                 </ul>
         </footer>
-            
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+</script>
 </body>
 </html>

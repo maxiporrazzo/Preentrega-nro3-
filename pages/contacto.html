@@ -8,76 +8,110 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar"> 
-                <li class="logo"><img src="/src/eFs6wb01.svg" alt=""></li>
-                <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/pages/carta.html">CARTA</a></li>
-                <li><a href="/pages/data.html">SOBRE NOSOTROS</a></li>
-                <li><a href="/pages/galeria.html">GALERIA</a></li>
-                <li><a href="/pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-contacto">
-        <section class="section-formulario"></section>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <li class="logo"><img src="/src/eFs6wb01.svg" alt=""></li>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/carta.html">CARTA</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/data.html">SOBRE NOSOTROS</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="main-contacto">
+    <section class="section-formulario">
         <form>
-        <h2>Formulario de contacto</h2>
-        <!-- SIMPLE INPUTS -->
-        <fieldset>
-            <legend>INFORMACION BASICA</legend>
-        <div class="form_input">
-            <label for="nombre">Nombre Completo</label>
-            <input type="text" placeholder="John Doe" id="nombre">
+            <h2>Formulario de contacto</h2>
+            <!-- SIMPLE INPUTS -->
+            <fieldset>
+                <legend>INFORMACIÓN BÁSICA</legend>
+                <div class="form_input">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="John Doe">
+                </div>
+
+                <div class="form_input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com">
+                </div>
+
+                <div class="form_input">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" placeholder="El asunto de tu mensaje">
+                </div>
+            </fieldset>
+
+            <!-- SELECT / OPTION -->
+            <div class="form_input">
+                <label for="tipo-usuario">Tipo de usuario</label>
+                <select name="type-of-user" id="tipo-usuario">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
             </div>
-        <div class="form_input">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Ejemplo@gmail.com" id="email">
-        </div>
-        <div class="form_input">
-            <label>Asunto
-            <input type="text" placeholder="El asunto de tu mensaje">
-            </label>
-            </div>
-        </fieldset>
-        <!-- SELECT / OPTION -->
-        <div class="form_input">
-            <label>Tipo de usuario
-            <select name="type-of-user">
-                <option value="user1">Seguidor/a</option>
-                <option value="user2">Empresa</option>
-                <option value="user3">Otros</option>
-            </select>
-            </label>
-        </div>
-        <!-- DATALIST / OPTION -->
-        <div class="form_input">
-        <label>Referente
-                <input list="referente" name="referente">
-                <datalist id="referente" name="type-of-user">
+
+            <!-- DATALIST / OPTION -->
+            <div class="form_input">
+                <label for="referente">Referente</label>
+                <input list="referente" name="referente" id="referente">
+                <datalist id="referente">
                     <option value="Youtube">Creadores de contenido</option>
                     <option value="Una Empresa">Una empresa del rubro IT</option>
-                    <option value="Un amigo">Me recomendo un amigo</option>
+                    <option value="Un amigo">Me recomendó un amigo</option>
                 </datalist>
-        </label>
-        </div>
-            <!-- TEXTAREA  -->
-        <div class="form_input">
-            <label>Mensaje
-            <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
-            </label>
-        </div>
-        <div class="form_input">
-            <label for="checkbox">Acepto los <a href="terms.html" target="blank">terminos y condiciones</a>
-            <input type="checkbox" class="checkbox" id="checkbox" required>
-            </label>
-        </div>
-        <div>
-            <button class="enviar-contacto">Enviar</button>
-        </div>
-    </form>
-    </main>
+            </div>
+
+            <!-- TEXTAREA -->
+            <div class="form_input">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="form_input">
+                <label for="checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox" required>
+                    Acepto los <a href="terms.html" target="_blank">términos y condiciones</a>
+                </label>
+            </div>
+
+            <!-- BOTÓN -->
+            <div>
+                <button type="submit" class="enviar-contacto">Enviar</button>
+            </div>
+        </form>
+    </section>
+</main>
+
         <footer>
             <p>© 2024 Restaurante Ejemplo. Todos los derechos reservados.</p>
             <p>Redes Sociales</p>
@@ -93,5 +127,9 @@
                 </li>
                 </ul>
         </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous">
+</script>
 </body>
 </html>
