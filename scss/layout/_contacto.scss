@@ -1,0 +1,118 @@
+.main-contacto {
+    background: url(/src/chat.fondo.png) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    min-height: 400px;
+    margin: auto;
+
+    .section-formulario {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 0;
+    background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.171) 100%
+    );
+    padding: 20px 0;
+    max-width: 500px;
+    margin: 90px auto 40px auto;
+    box-shadow: 0px 0px 55px rgba(255, 255, 255, 0.1333333333);
+    border-radius: 8px;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+
+    .form_input {
+    padding: 6px 20px;
+    }
+
+    input,
+    textarea,
+    select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #eee;
+    resize: vertical;
+    }
+
+    textarea {
+    min-width: 100%;
+    min-height: 102px;
+    max-height: 200px;
+    resize: none;
+    font-family: sans-serif;
+    }
+
+    .enviar-contacto {
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #eee;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+    }
+
+    option {
+    background-color: #222;
+    }
+
+    label {
+    font-size: 0.88em;
+    line-height: 2;
+    }
+
+    .checkbox {
+    width: auto;
+    height: 10px;
+    }
+
+    fieldset {
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 8px 6px 20px 8px;
+    margin: 20px;
+
+    legend {
+        margin: 0;
+        padding: 6px;
+        color: #777;
+    }
+    }
+}
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+a {
+    color: #69f;
+    text-decoration: none;
+}
