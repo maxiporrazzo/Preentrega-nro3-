@@ -4,13 +4,17 @@ main {
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    @include text-shadow;
+            @include respond-to(tablet) { font-size: 1.8rem; }
+    @include respond-to(mobile) { font-size: 1.5rem; }
 }
 
-p {
+.hero-index p {
     font-size: 1.2em;
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            @include respond-to(tablet) { font-size: 0.7em; }
+    @include respond-to(mobile) { font-size: 0.5em; }
 }
 
 button {
@@ -26,16 +30,15 @@ button {
 }
 
 .hero-index {
-    background: url(/src/chat.fondo.png) no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
+    @include bg-cover;
+    @include flex-center(column);
+    color: $color-light;
     height: 400px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     padding: 10px 20px;
+        @include respond-to(tablet) {
+    height: 250px;      
+    padding: 20px 15px; 
+}
 }
 
 h2 {
@@ -54,11 +57,9 @@ h2 {
     flex-wrap: wrap;
 
 .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include card;
     width: 300px;
-    transition: transform 0.3s ease;
+    
 
     img {
         border-top-left-radius: 5px;
@@ -76,5 +77,23 @@ h2 {
     .card-body {
         background-color: rgba(209, 209, 209, 0.1921568627);
         border-radius: 5px;}
+    }
+}
+
+.mapa {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(209, 209, 209, 0.1921568627);
+    border-radius: 8px;
+
+    iframe {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: 80%;
+    height: 300px;
     }
 }
