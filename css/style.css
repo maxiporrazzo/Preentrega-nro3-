@@ -499,6 +499,15 @@ main button {
   transition: background-color 0.3s ease;
 }
 
+h2 {
+  font-size: 0.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
 .hero-index {
   background: url(/src/chat.fondo.png) no-repeat center center;
   background-size: cover;
@@ -516,12 +525,6 @@ main button {
     height: 250px;
     padding: 20px 15px;
   }
-}
-
-h2 {
-  font-size: 0.5em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .cards {
