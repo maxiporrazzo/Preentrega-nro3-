@@ -6,7 +6,7 @@
 }
 
 .hero-carta {
-  background: url(/src/chat.fondo.png) no-repeat center center;
+  background: url(../assets/chat.fondo.png) no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -128,7 +128,7 @@
 }
 
 .main-contacto {
-  background: url(/src/chat.fondo.png) no-repeat center center;
+  background: url(../assets/chat.fondo.png) no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -235,7 +235,7 @@
 }
 
 .about-section {
-  background: url(/src/chat.fondo.png) no-repeat center center;
+  background: url(../assets/chat.fondo.png) no-repeat center center;
   background-size: cover;
   padding: 20px;
   margin: 20px;
@@ -372,7 +372,7 @@ footer ul li a {
 }
 
 .section-galeria {
-  background: url(/src/chat.fondo.png) no-repeat center center;
+  background: url(../assets/chat.fondo.png) no-repeat center center;
   background-size: cover;
   padding: 20px;
   margin: 20px;
@@ -446,13 +446,12 @@ nav div li a {
 nav div li a:hover {
   color: #ff9900 !important;
 }
-nav div li img {
-  height: 100px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
 nav .container-fluid {
   background-color: #ffcead !important;
+}
+
+img {
+  height: 100px;
 }
 
 main {
@@ -509,7 +508,7 @@ h2 {
 }
 
 .hero-index {
-  background: url(/src/chat.fondo.png) no-repeat center center;
+  background: url(../assets/chat.fondo.png) no-repeat center center;
   background-size: cover;
   background-position: center;
   display: flex;
