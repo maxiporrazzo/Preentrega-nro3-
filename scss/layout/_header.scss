@@ -12,9 +12,12 @@ nav {
     li {
     margin: 0 40px;
 
+
     a {
         font-style: italic;
         font-weight: bold;
+        color:$color-light !important;
+        
 
         &:hover {
         color: #ff9900 !important;
@@ -25,8 +28,8 @@ nav {
 }
 
     .container-fluid {
-    background-color: #ffcead !important;}
+    background-color: $color-dark !important;}
 }
 img{
-    height: 100px; // o el tamaño que prefieras
+    height: 100px;
 }

@@ -344,7 +344,7 @@
 }
 
 footer {
-  background-color: #ffcead;
+  background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -353,7 +353,7 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
 }
 footer ul {
   display: flex;
@@ -442,12 +442,13 @@ nav div li {
 nav div li a {
   font-style: italic;
   font-weight: bold;
+  color: #ffffff !important;
 }
 nav div li a:hover {
   color: #ff9900 !important;
 }
 nav .container-fluid {
-  background-color: #ffcead !important;
+  background-color: #000000 !important;
 }
 
 img {
